@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>CNT4713 Class Project</title>
+    <style>
+        video {
+        width: 650px;
+        height: 480px;
+        }
+        
+        h1 {
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .streamContainer {
+            border: 4px solid #FE1F00;
+            background-color: lightgrey;
+            width: 650px;
+            overflow: auto;
+            padding: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>LIVE Video Stream</h1>
+    <div class="container">
+        <div class="streamContainer">
+            <video id= "stream" src="http://webstream.ddns.net:8080/stream.ogg" type = "video/ogg;codecs=theora" autoplay = "autoplay"></video>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-input">
+            <div class="container">
+                <div class="hidden" id="newpost"> 
+                    <input type="button" class="btn" onclick="location.href='https://docs.adobe.com/content/help/en/target/using/experiences/vec/troubleshoot-composer/mixed-content.html'; " value="Adobe Docs: Enabling Mixed Content">
+                    <h5 class="container" style="color: navy;">
+                        To enable mixed content click above. In case there's a 'Forbidden Error', simply refresh the page. 
+                        Click below to hide this message.
+                    </h5>
+                </div>
+               </div> 
+            <button class="btn" id="button" onclick="showhide()">Video Not Showing?</button>
+        <script>
+            function showhide(){
+                var div = document.getElementById("newpost");
+                div.classList.toggle("hidden");
+            }
+        </script>
+        <form action="/stream_static" method="POST">
+            <button class="btn" name="back" type="submit">Back</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

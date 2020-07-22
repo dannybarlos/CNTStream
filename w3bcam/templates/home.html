@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>CNT4713 Class Project</title>
+</head>
+<body>
+    <div class="container">
+        <img src="../static/cnt.jpg" alt="CNT4713" class="logo">
+        <h3> CNT4713 Stream Project</h3>
+        <form action="/submit" method="POST">
+            <div class="col-lg-4 col-lg-offset-4">
+                <div class="form-group" id=pwd>
+                    <!-- <input type="password" name="password" placeholder="Password"> -->
+                    {{ form.password(class = "form-control mb-3", placeholder = "Password", style="width:250px")}}
+                </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-4">
+                <div class="form-group">
+                    {{ form.submit(class="btn")}}
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

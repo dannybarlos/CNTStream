@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>CNT4713 Class Project</title>
+    <style>
+        video {
+            width: 630px;
+            height: 480px;
+        }
+        
+        .streamContainer {
+            border: 4px solid #FE1F00;
+            background-color: lightgrey;
+            width: 630px;
+            margin: 2rem auto;
+            overflow: auto;
+            padding: 10px;
+            margin: auto;
+        }
+        
+        h1 {
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>STATIC Video Stream</h1>
+    <div class="container">
+        <div class="streamContainer">
+            <video controls ="" width="330" height="240">
+                <source src ="/static/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-input">
+            <form action="/stream_static" method="POST">
+                <button class="btn" name="back" type="submit">Back</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

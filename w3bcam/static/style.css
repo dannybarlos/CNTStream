@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 650px;
+    margin: 1rem auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+p.message {
+    color: red;
+    text-align: center;
+    margin-top: 0;
+}
+
+.logo {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.form-input {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+#pwd{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 12px;
+    width: 60%;
+    background: #FE1F00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1rem;
+    margin-right: 20%;
+    margin-left: 20%;
+}
